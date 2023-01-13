@@ -7,6 +7,6 @@ Andrew-Nguyen1: Product Manager
 nxchotakuu: QA Engineer
   https://www.codermerlin.com/users/melanie-lopez-de-nava-reza/Digital%20Portfolio/index.html
 shreyakumar66: Software Engineer
-  https://www.codermerlin.com/users/shreya-kumar/Digital%20Portfolio/index.html
+  https://www.codermerlin.com/users/shreya-kumar/Digital%20Portfolio/index.html  
 preston-hnguyen: Release Engineer
 https://www.codermerlin.com/users/hoang-nguyen/Digital%20Portfolio/index.html
