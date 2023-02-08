@@ -18,4 +18,12 @@ var result = document.getElementById("result");
 showResultButton.addEventListener("click", showResult);
 
 
+function showResult() {
+
+    reset()
+    var q1Answer = $('input[name="q1"]:checked').val();
+
+    calculateScore(q1Answer);
+}
+
 
