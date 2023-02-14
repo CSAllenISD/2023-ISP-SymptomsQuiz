@@ -58,4 +58,4 @@ function reset() {
     feverScore = 0;
 }
 
-
+}
