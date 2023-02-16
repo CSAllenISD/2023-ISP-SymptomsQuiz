@@ -42,10 +42,10 @@ function showResult() {
 
 function calculateScore(answer) {
     switch(answer){
-        case 'fever':
+        case 'Fever':
             feverScore++;
             break;
-        case 'cold':
+        case 'Cold':
             coldScore++;
             break;
     }
