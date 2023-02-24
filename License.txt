@@ -1,4 +1,4 @@
-Copyright (C) YEAR 2023, Tejasvi Gutta, Andrew Nguyen, Shreya Kumar, Melanie Lopez de nava reza, and Hoang Nguyen.
+Copyright (C) YEAR 2023, Hoang Nguyen, Tejasvi Gutta, Andrew Nguyen, Shreya Kumar, Melanie Lopez de nava reza.
 This program was developed using codermerlin.academy resources.
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
