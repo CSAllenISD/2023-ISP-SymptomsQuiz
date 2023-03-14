@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<body style="background-color:paleturquoise;">
-</body>
-<head>
-  <title>Symptoms Quiz</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Symptoms Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+	  box-sizing: border-box;
+      }
 
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <!-- import the webpage's javascript file -->
-  <script src="script.js" defer>
-  </script>
+      body {
+	  background-color: white;
+      }
 
-  <style type="text/css">
-    h1 {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-  </style>
+      /* Style the header */
+      header {
+	  font-family: "Georgia", serif;
+	  background-color: white;
+	  padding: 30px;
+	  text-align: center;
+	  font-size: 35px;
+	  color: #ff280d;
+      }
 
-</head>
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+	  float: left;
+	  width: 50%;
+	  height: 300px; /* only for demonstration, should be removed */
+	  background: white;
+	  padding: 20px;
+	  color: #ff280d; 
+      }
 
-<body>
+      /* Style the list inside the menu */
+      nav ul {
+	  list-style-type: none;
+	  padding: 0;
+      }
 
-  <header>
-    <h1>
-      <font size=+4><p style="color:midnightblue;"><b><i>Take the quiz and find out what illness you have.</i></b></p></font>
-    </h1>
-  </header>
+      article {
+	  float: right;
+	  padding: 20px;
+	  width: 50%;
+	  background-color: #c2dbf4ff;
+	  height: 300px; /* only for demonstration, should be removed */
+	  color: #ff280d;
+      }
 
-  <main>
-
-    <!--Q1-->
-
-    <h2>Are you feeling hot or cold?</h2>
-    <div class="question">
-
-      <div class="answer-choice">
-        <p style="color:royalblue;"><input id="q1a1" type="radio" name="q1" value="Cold">Cold</p>
-      </div>
-     <div class="answer-choice">
-        <p style="color:crimson;"><input id="q1a2" type="radio" name="q1" value="Hot">Hot</p>
-      </div>
-      </div>
-      <button id="showResult" onclick="showResult()">Show Result</button>
-      <h2 id="result">Your result is...</h2>
+      /* Clear floats after the columns */
+      section::after {
+	  content: "";
+	  display: table;
+	  clear: both;
+      }
       
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+	  nav, article {
+	      width: 100%;
+	      height: auto;
+	  }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Symptoms Quiz</h2>
+    </header>
 
-    </main>
-    </body>
-    </html>
+    <section>
+      <nav>
+	<h1>We are here to help you with your health!</h1>
+	<p>Bedridden and cannot go to the doctor? Take our quiz to see what is causing it. We care for your health!</p>
+	<p><a href="https://www.codermerlin.academy/users/hoang-nguyen/Symptoms%20Quiz/quiz/index.html">link to the quiz:</a>
+      </nav>
+
+      <article>
+	<h1>a pic will be inserted</h1>
+	
+      </article>
+    </section>
+
+  </body>
+</html>
 

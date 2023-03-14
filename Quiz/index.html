@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:paleturquoise;">
+</body>
+<head>
+  <title>Symptoms Quiz</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- import the webpage's javascript file -->
+  <script src="script.js" defer>
+  </script>
+
+  <style type="text/css">
+    h1 {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      <font size=+4><p style="color:midnightblue;"><b><i>Take the quiz and find out what illness you have.</i></b></p></font>
+    </h1>
+  </header>
+
+  <main>
+
+    <!--Q1-->
+
+    <h2>Are you feeling hot or cold?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <p style="color:royalblue;"><input id="q1a1" type="radio" name="q1" value="Cold">Cold</p>
+      </div>
+     <div class="answer-choice">
+        <p style="color:crimson;"><input id="q1a2" type="radio" name="q1" value="Hot">Hot</p>
+      </div>
+      </div>
+      <button id="showResult" onclick="showResult()">Show Result</button>
+      <h2 id="result">Your result is...</h2>
+      
+
+    </main>
+    </body>
+    </html>
+
