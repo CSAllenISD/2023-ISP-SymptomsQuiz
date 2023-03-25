@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Symptoms Quiz</title>
+    <title>temp Quiz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -12,27 +12,15 @@
       body {
 	  background-color: white;
       }
-
-      /* Style the header */
+	  	  
       header {
-	  font-family: "Georgia", serif;
 	  background-color: white;
-	  padding: 30px;
-	  text-align: center;
-	  font-size: 35px;
+	  text-align: left;
+	  font-size: 40px;
 	  color: #ff280d;
+	  font-family: Verdana, sans-serif;
       }
-
-      /* Create two columns/boxes that floats next to each other */
-      nav {
-	  float: left;
-	  width: 50%;
-	  height: 300px; /* only for demonstration, should be removed */
-	  background: white;
-	  padding: 20px;
-	  color: #ff280d; 
-      }
-
+      
       /* Style the list inside the menu */
       nav ul {
 	  list-style-type: none;
@@ -44,8 +32,76 @@
 	  padding: 20px;
 	  width: 50%;
 	  background-color: #c2dbf4ff;
-	  height: 300px; /* only for demonstration, should be removed */
+	  height: 1500px; /* only for demonstration, should be removed */
 	  color: #ff280d;
+      }
+
+      
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+	  font-family: "Times New Roman", Times, serif;
+	  float: left;
+	  width: 50%;
+	  height: 1500px; /* only for demonstration, should be removed */
+	  background: white;
+	  padding: 20px;
+	  color: #ff280d;
+	  font-size: 70px;
+      }
+
+      /*Create button to go to the quiz */
+      .button {
+	  background-color: #ff280d;
+	  border: none;
+	  font-size: 40px;
+	  font-family: "Times New Roman", Times, serif;
+	  color: white;
+	  padding: 10px 40px;
+	  text-align: center;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  border-radius: 30px;
+      }
+
+      .btn {
+	  border: none;
+	  background-color: #c2dbf4ff;
+	  font-family: Verdana, sans-serif;
+	  padding: 14px 28px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  display: inline-block;
+	  font-size: 25px;
+	  float: right;
+      }
+
+      /*Create buttons to for other pages */
+      .aboutus {
+	  color: #ff280d;
+      }
+
+      .aboutus:hover {
+	  background-color: #92c5f7ff;
+	  color: white;
+      }
+
+      .git {
+	  color: #ff280d;
+      }
+
+      .git:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
+
+      .team {
+	  color: #ff280d;
+      }
+
+      .team:hover {
+	  background: #92c5f7ff;
+	  color: white;
       }
 
       /* Clear floats after the columns */
@@ -65,20 +121,24 @@
     </style>
   </head>
   <body>
-    <header>
-      <h2>Symptoms Quiz</h2>
-    </header>
 
     <section>
       <nav>
-	<h1>We are here to help you with your health!</h1>
-	<p>Bedridden and cannot go to the doctor? Take our quiz to see what is causing it. We care for your health!</p>
-	<p><a href="https://www.codermerlin.academy/users/hoang-nguyen/Symptoms%20Quiz/quiz/index.html">link to the quiz:</a>
+	<header>
+	  <p>Symptoms Quiz</p>
+	</header>
+	<br>
+	<br>
+	<p>We are here to help you with <br>your health!</p>
+	<p style="color: black; font-size: 40px;">Bedridden and cannot go to the doctor? Take our quiz to see <br>what is causing it. We care for your health!</p>
+	<p style="text-align: center;"><a href="https://www.codermerlin.academy/users/hoang-nguyen/temp%20quiz/quiz/index.html"><button class="button">Get Started</button></a></p>
       </nav>
 
       <article>
-	<h1>a pic will be inserted</h1>
-	
+	<button class="btn team">Our Team</button>
+	<button class="btn git">GitHub</button>
+	<button class="btn aboutus"; >About Us</button>
+	<p>fjdhfd</p>
       </article>
     </section>
 
