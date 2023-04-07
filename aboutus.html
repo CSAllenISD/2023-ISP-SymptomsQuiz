@@ -12,37 +12,53 @@
       body {
 	  background-color: white;
 	  text-align: center;
+	  line-height: 2;
       }
 
       header {
 	  float: left;
 	  width: 50%;
 	  background-color: #c2dbf4ff;
-	  text-align: left;
-	  color: #ff280d;
-	  padding: 20px;
-	  font-size: 30px;
-	  height: 100px;
+	  padding: 3px;
       }
 
-      article {
+      nav {
 	  float: right;
 	  width: 50%;
 	  background-color: #c2dbf4ff;
-	  text-align: right;
-	  color: #ff280;
+	  padding: 3px;
       }
 
-      .btn {
+
+      article {
+	  margin: 20px;
+	  text-align: center;
+	  padding: 20px;
+	  font-size: 20px;
+	  font-family: Verdana, sans-serif;
+      }
+      
+      .button {
 	  border: none;
 	  background-color: #c2dbf4ff;
-	  height: 100px; /* only for demonstration, should be removed */
-	  font-family: Verdana, sans-serif;
+	  height: 90px;
 	  padding: 14px 28px;
-	  font-size: 16px;
+	  font-size: 28px;
 	  cursor: pointer;
 	  display: inline-block;
-	  font-size: 25px;
+	  float: left;
+	  padding: 3px;
+      }
+      
+      .btn {
+	  border: none;
+	  padding: 3px;
+	  background-color: #c2dbf4ff;
+	  height: 90px;
+	  padding: 14px 28px;
+	  font-size: 28px;
+	  cursor: pointer;
+	  display: inline-block;
 	  float: right;
       }
 
@@ -74,6 +90,15 @@
 	  color: white;
       }
 
+      .quiz {
+	  color: #ff280d;    
+      }
+      
+      .quiz:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
+
       
       
     </style>
@@ -81,15 +106,40 @@
 
   <body>
     <header>
-      <p>Symptoms Quiz</p>
+      <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/ourteam.html"><button class="button quiz">Symptoms Quiz</button></a>
     </header>
 
-    <article>
+    <nav>
       <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/ourteam.html"><button class="btn team">Our Team</button></a>
       <a href="https://github.com/CSAllenISD/2023-ISP-SymptomsQuiz"><button class="btn git">GitHub</button></a>
       <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/index.html"><button class="btn homepage">Home Page</button></a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <article>
+      <p style="font-size: 27px;"><b>About Us</b></p>
+      <p style="margin-left: 10%; margin-right: 10%;">We are in the process of making a website called “Symptoms Quiz” for the ISP. It complies most common illnesses and diseases that everyone can get. It will help the community to acknowledge their illnesses and take care of their health.</p>
     </article>
 
+    <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
+
+    
+    <article>
+      <p style="font-size: 27px;"><b>How does it work?</b></p>
+      <p style="margin-left: 10%; margin-right: 10%;">Our website asks the users for their symptoms in order to find out what illness they have. It will generate new questions based on your previous answers. It will be personalized to the user for their specific needs.</p>
+    </article>
+
+    <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
+
+    <article>
+      <p style="font-size: 27px;"><b>Contact</b></p>
+      <p style="margin-left: 10%; margin-right: 10%;">Email: quizsymptoms@gmail.com </p>
+    </article>
+
+    <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
     
   </body>
   
