@@ -2,12 +2,16 @@
 
 var coldScore = 0;
 var feverScore = 0;
+var yesScore = 0;
+var noScore = 0;
 var numQuestion = 0;
 
 
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
 
+var q2a1 = document.getElementById("q2a1");
+var q2a2 = document.getElementById("q2a2");
 
 
 //var showResultButton = document.getElementById("showResult");
