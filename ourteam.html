@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Our Team</title>
+    <title>About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -12,24 +12,92 @@
       body {
 	  background-color: white;
 	  text-align: center;
+	  line-height: 2;
       }
 
       header {
 	  float: left;
 	  width: 50%;
 	  background-color: #c2dbf4ff;
-	  text-align: left;
-	  color: #ff280d;
+	  padding: 3px;
       }
 
-      article {
+      nav {
 	  float: right;
 	  width: 50%;
 	  background-color: #c2dbf4ff;
-	  text-align: right;
-	  color: #ff280;
+	  padding: 3px;
       }
 
+
+      article {
+	  margin: 20px;
+	  text-align: center;
+	  padding: 20px;
+	  font-size: 20px;
+	  font-family: Verdana, sans-serif;
+      }
+      
+      .button {
+	  border: none;
+	  background-color: #c2dbf4ff;
+	  height: 90px;
+	  padding: 14px 28px;
+	  font-size: 28px;
+	  cursor: pointer;
+	  display: inline-block;
+	  float: left;
+	  padding: 3px;
+      }
+      
+      .btn {
+	  border: none;
+	  padding: 3px;
+	  background-color: #c2dbf4ff;
+	  height: 90px;
+	  padding: 14px 28px;
+	  font-size: 28px;
+	  cursor: pointer;
+	  display: inline-block;
+	  float: right;
+      }
+
+      /*Create buttons to for other pages */
+      .homepage {
+	  color: #ff280d;
+      }
+
+      .homepage:hover {
+	  background-color: #92c5f7ff;
+	  color: white;
+      }
+
+      .git {
+	  color: #ff280d;
+      }
+
+      .git:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
+
+      .team {
+	  color: #ff280d;
+      }
+
+      .team:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
+
+      .quiz {
+	  color: #ff280d;    
+      }
+      
+      .quiz:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
 
       
       
@@ -38,14 +106,18 @@
 
   <body>
     <header>
-      <p>Symptoms Quiz</p>
+      <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/Quiz/index.html"><button class="button quiz">Symptoms Quiz</button></a>
     </header>
 
-    <article>
-      <p>links</p>
-    </article>
-
-    
+    <nav>
+      <a href="https://github.com/CSAllenISD/2023-ISP-SymptomsQuiz"><button class="btn git">GitHub</button></a>
+      <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/aboutus.html"><button class="btn team">About Us</button></a>
+      <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/index.html"><button class="btn homepage">Home Page</button></a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>    
   </body>
   
     
