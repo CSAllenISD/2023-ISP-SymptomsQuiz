@@ -1,17 +1,30 @@
 //Initial Scores
 
 var coldScore = 0;
-var feverScore = 0;
-var yesScore = 0;
-var noScore = 0;
+var fluScore = 0;
+var allergiesScore = 0;
 var numQuestion = 0;
 
 
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
+var q1a3 = document.getElementById("q1a3");
 
 var q2a1 = document.getElementById("q2a1");
 var q2a2 = document.getElementById("q2a2");
+
+var q3a1 = document.getElementById("q3a1");
+var q3a2 = document.getElementById("q3a2");
+
+var q4a1 = document.getElementById("q4a1");
+var q4a2 = document.getElementById("q4a2");
+
+var q5a1 = document.getElementById("q5a1");
+var q5a2 = document.getElementById("q5a2")
+
+var q6a1 = document.getElementById("q6a1");
+var q6a2 = document.getElementById("q6a2");
+var q6a3 = document.getElementById("q6a3");
 
 
 //var showResultButton = document.getElementById("showResult");
