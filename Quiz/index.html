@@ -1,77 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<body style="background-color:aliceblue;">
-</body>
-<head>
-  <title>Symptoms Quiz</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Symptoms Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+	  box-sizing: border-box;
+      }
 
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <!-- import the webpage's javascript file -->
-  <script src="script.js" defer>
-  </script>
+      body {
+	  background-color: white;
+	  text-align: center;
+	  line-height: 2;
+      }
 
-  <style type="text/css">
-    h1 {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-  </style>
+      header {
+	  float: left;
+	  width: 50%;
+	  background-color: #c2dbf4ff;
+	  padding: 30px;
+      }
 
-</head>
+      nav {
+	  float: right;
+	  width: 50%;
+	  background-color: #c2dbf4ff;
+	  padding: 30px;
+      }
 
-<body>
 
-  <header>
-    <h1>
-      <font size=+4><p style="color:midnightblue;"><i>Self Diagnosis</i></p></font>
-    </h1>
-  </header>
-  <h2>If you would like to be tested for cold, flu, or allergies, please go to the page below.</h2>
-  <a href="cfa.html"><button class="button cfapage">Cold,Flu,Allergies</button></a>
-<main>
+      article {	
+	  text-align: center;
+	  padding: 10px;
+	  color: black;
+	  font-size: 70px;
+	  font-family: "Times New Roman", Times, serif; 
+      }
+      
+      .button {
+	  border: none;
+	  background-color: #c2dbf4ff;
+	  height: 90px;
+	  padding: 14px 28px;
+	  font-size: 35px;
+	  cursor: pointer;
+	  display: inline-block;
+	  float: left;
+	  padding: 3px;
+      }
+      
+      .btn {
+	  border: none;
+	  padding: 3px;
+	  background-color: #c2dbf4ff;
+	  height: 90px;
+	  padding: 14px 28px;
+	  font-size: 35px;
+	  cursor: pointer;
+	  display: inline-block;
+	  float: right;
+      }
 
-    <!--Q1-->
-<!--
-    <h2>Are you feeling hot or cold?</h2>
-    <div class="question">
+      .bttn {
+	  background-color: #ff280d;
+	  border: none;
+	  font-size: 40px;
+	  font-family: "Times New Roman", Times, serif;
+	  color: white;
+	  padding: 40px 40px;
+	  text-align: center;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  border-radius: 80px;
+	  transition-duration: 0.4s;
+      }
 
-      <div class="answer-choice">
-        <p style="color:1c1b1a;"><input id="q1a1" type="radio" name="q1" value="Cold">Cold</p>
-      </div>
-     <div class="answer-choice">
-        <p style="color:1c1b1a;"><input id="q1a2" type="radio" name="q1" value="Hot">Hot</p>
-      </div>
-      </div>
-      <!--Q2-->
-   <!--
+      /*Create buttons to for other pages */
+      .homepage {
+	  color: #ff280d;
+      }
 
+      .homepage:hover {
+	  background-color: #92c5f7ff;
+	  color: white;
+      }
+
+      .git {
+	  color: #ff280d;
+      }
+
+      .git:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
+
+      .team {
+	  color: #ff280d;
+      }
+
+      .team:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
+
+      .aboutus {
+	  color: #ff280d;    
+      }
+      
+      .aboutus:hover {
+	  background: #92c5f7ff;
+	  color: white;
+      }
+
+      .bttn:hover {
+	  background-color:#ffa902ff;
+	  color: white;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/index.html"><button class="button homepage">Home Page</button></a>
+    </header>
+
+    <nav>
+      <a href="https://github.com/CSAllenISD/2023-ISP-SymptomsQuiz"><button class="btn git">GitHub</button></a>
+      <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/ourteam.html"><button class="btn team">Our Team</button></a>
+      <a href="https://www.codermerlin.academy/users/hoang-nguyen/2023%20ISP%20Symptoms%20Quiz/aboutus.html"><button class="btn aboutus">About Us</button></a>
+    </nav>
+
+    <article>
+      <p><b>Symptoms Quiz</b></p>
+      <p style="font-size: 50px;">please click on what you need to be tested for </p>
+      <p style="text-align: center;"><a href="cfa.html"><button class="bttn">Cold/Flu/Allergies</button></a></p>
+      <p style="text-align: center;"><a href="cfa.html"><button class="bttn">Diseases</button></a></p>
+      <p style="text-align: center;"><a href="cfa.html"><button class="bttn">Covid-19</button></a></p>
+    </article>
     
-   
-      <h2>Do you have a sore throat?</h2>
-      <div class="question">
-
-        <div class="answer-choice">
-          <p style="color:1c1b1a;"><input id="q2a1" type="radio" name="q2" value="Yes">Yes</p>
-          </div>
-          <div class="answer-choice">
-            <p style="color:1c1b1a;"><input id="q2a2" type="radio" name="q2" value="No">No</p>
-          </div>
-
-
-        </div>
-
-      </div>
-      <button id="showResult" onclick="showResult()">Show Result</button>
-      <h2 id="result">Your result is...</h2>
+    <br>
+    <br>
+    <br>
+    <br>    
+  </body>
+  
     
-    -->
-
-    </main>
-    </body>
-    </html>
-
