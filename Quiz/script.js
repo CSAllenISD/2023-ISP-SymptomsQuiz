@@ -26,6 +26,11 @@ var q6a1 = document.getElementById("q6a1");
 var q6a2 = document.getElementById("q6a2");
 var q6a3 = document.getElementById("q6a3");
 
+var q7a1 = document.getElementById("q7a1");
+var q7a2 = document.getElementById("q7a2");
+var q7a3 = document.getElementById("q7a3");
+
+
 
 //var showResultButton = document.getElementById("showResult");
 var restartButton = document.getElementById("restart");
