@@ -43,15 +43,15 @@ showResultButton.addEventListener("click", showResult);
 function updateResult() {
    // console.log('coldScore: ' + coldScore);
     //console.log('fluScore: ' + fluScore);
-	if (coldScore >= 1){
+	if (coldScore >= 3){
         result.innerHTML = "You have a cold."
         console.log("You have a cold");
     } 
-    else if (feverScore >= 1) {
+    else if (feverScore >= 3) {
         result.innerHTML = "You have the flu."
         console.log("You have the flu.");
   }
-  else if (allergiesScore >= 1){
+  else if (allergiesScore >= 3){
     result.innerHTML = "You have allergies."
     console.log("You have allergies.")
   }
@@ -86,11 +86,14 @@ function showResult() {
 
 function calculateScore(answer) {
     switch(answer){
-        case 'Hot':
-            feverScore++;
+        case 'flu':
+            fluScore++;
             break;
-        case 'Cold':
+        case 'cold':
             coldScore++;
+            break;
+        case "allergies":
+            allergiesScore++;
             break;
     }
 }
@@ -100,5 +103,6 @@ function reset() {
     numQuestion = 0
     coldScore = 0
     feverScore = 0;
+    allergiesScore = 0;
 }
 
