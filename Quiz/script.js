@@ -37,6 +37,7 @@ var restartButton = document.getElementById("restart");
 var result = document.getElementById("result");
 
 //show result button
+var showResultButton = document.getElementById("showResult");
 
 showResultButton.addEventListener("click", showResult);
 
