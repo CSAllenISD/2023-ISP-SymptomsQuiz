@@ -38,32 +38,48 @@ var result = document.getElementById("result");
 
 //show result button
 
-//showResultButton.addEventListener("click", showResult);
+showResultButton.addEventListener("click", showResult);
 
 function updateResult() {
-    console.log('coldScore: ' + coldScore);
-    console.log('feverScore: ' + feverScore);
+   // console.log('coldScore: ' + coldScore);
+    //console.log('fluScore: ' + fluScore);
 	if (coldScore >= 1){
         result.innerHTML = "You have a cold."
         console.log("You have a cold");
     } 
     else if (feverScore >= 1) {
-        result.innerHTML = "You have a fever."
-        console.log("You have a fever.");
+        result.innerHTML = "You have the flu."
+        console.log("You have the flu.");
+  }
+  else if (allergiesScore >= 1){
+    result.innerHTML = "You have allergies."
+    console.log("You have allergies.")
   }
 }
 
 function showResult() {
 
     reset();
-    var q1Answer = $('input[id="q1a1"]:checked').val();
-    var q2Answer = $('input[id="q1a2"]:checked').val();
+    var q1Answer = $('input[name="q1"]:checked').val();
+    var q2Answer = $('input[name="q2"]:checked').val();
+    var q3Answer = $('input[name="q3"]:checked').val();
+    var q4Answer = $('input[name="q4"]:checked').val();
+    var q5Answer = $('input[name="q5"]:checked').val();
+    var q6Answer = $('input[name="q6"]:checked').val();
+    var q7Answer = $('input[name="q7"]:checked').val();
+
 
     console.log('q1Answer: ' + q1Answer)
     console.log('q2Answer: ' + q2Answer)
 
     calculateScore(q1Answer);
     calculateScore(q2Answer);
+    calculateScore(q3Answer);
+    calculateScore(q4Answer);
+    calculateScore(q5Answer);
+    calculateScore(q6Answer);
+    calculateScore(q7Answer);
+
 
     updateResult();
 }
