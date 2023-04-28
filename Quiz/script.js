@@ -37,9 +37,9 @@ var restartButton = document.getElementById("restart");
 var result = document.getElementById("result");
 
 //show result button
-var showResultButton = document.getElementById("showResult");
+//var showResultButton = document.getElementById("showResult");
 
-showResultButton.addEventListener("click", showResult);
+//showResultButton.addEventListener("click", showResult);
 
 function updateResult() {
    // console.log('coldScore: ' + coldScore);
@@ -48,7 +48,7 @@ function updateResult() {
         result.innerHTML = "You have a cold."
         console.log("You have a cold");
     } 
-    else if (feverScore >= 3) {
+    else if (fluScore >= 3) {
         result.innerHTML = "You have the flu."
         console.log("You have the flu.");
   }
@@ -72,6 +72,11 @@ function showResult() {
 
     console.log('q1Answer: ' + q1Answer)
     console.log('q2Answer: ' + q2Answer)
+    console.log('q3Answer: ' + q3Answer)
+    console.log('q4Answer: ' + q4Answer)
+    console.log('q5Answer: ' + q5Answer)
+    console.log('q6Answer: ' + q6Answer)
+    console.log('q7Answer: ' + q7Answer)
 
     calculateScore(q1Answer);
     calculateScore(q2Answer);
@@ -87,10 +92,10 @@ function showResult() {
 
 function calculateScore(answer) {
     switch(answer){
-        case 'flu':
+        case "flu":
             fluScore++;
             break;
-        case 'cold':
+        case "cold":
             coldScore++;
             break;
         case "allergies":
@@ -102,8 +107,6 @@ function calculateScore(answer) {
 function reset() {
     result.innerHTML = "You have a..."
     numQuestion = 0
-    coldScore = 0
-    feverScore = 0;
-    allergiesScore = 0;
+    coldScore = fluScore = allergiesScore = 0;
 }
 

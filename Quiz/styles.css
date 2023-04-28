@@ -1,15 +1,15 @@
 body {
     background-color: aliceblue;
-    text-align: center;
+    /* text-align: center; */
 }
 header {
-    text-align: center;
+    /* text-align: center; */
 }
 .answer-choice {
-    text-align: center;
+    /* text-align: center; */
 }
 h2 {
-    text-align: center;
+    /* text-align: center; */
 }
 .button {
     border: none;
@@ -25,4 +25,11 @@ h2 {
 .cfapage:hover {
     background-color: purple;
     color: white;
+}
+div{
+    padding:10px;
+}
+h1{
+    font-size: 50px;
+    color: midnightblue;
 }
