@@ -80,9 +80,25 @@ function showResult() {
 
     calculateScore(q1Answer);
     calculateScore(q2Answer);
+    
+    if(q2Answer == 'flu')
+        calculateScore('allergies');
+    
     calculateScore(q3Answer);
+    
+    if(q3Answer == 'flu')
+        calculateScore('cold');
+    
     calculateScore(q4Answer);
+    
+    if(q4Answer == 'cold')
+        calculateScore('flu');
+    
     calculateScore(q5Answer);
+    
+    if(q5Answer == 'flu')
+        calculateScore('cold');
+    
     calculateScore(q6Answer);
     calculateScore(q7Answer);
 
