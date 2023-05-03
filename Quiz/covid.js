@@ -86,3 +86,4 @@ function reset() {
     numQuestion = 0
     yesScore = noScore =  0;
 }
+//tested, ready to move on
