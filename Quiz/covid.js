@@ -1,8 +1,7 @@
 //Initial Scores
 
-var coldScore = 0;
-var fluScore = 0;
-var allergiesScore = 0;
+var yesScore = 0;
+var noScore = 0;
 var numQuestion = 0;
 
 
@@ -94,14 +93,11 @@ function showResult() {
 
 function calculateScore(answer) {
     switch(answer){
-        case "flu":
-            fluScore++;
+        case "yes":
+            yesScore++;
             break;
-        case "cold":
-            coldScore++;
-            break;
-        case "allergies":
-            allergiesScore++;
+        case "no":
+            noScore++;
             break;
     }
 }
