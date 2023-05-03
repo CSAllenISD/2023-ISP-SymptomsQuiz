@@ -33,17 +33,13 @@ var result = document.getElementById("result");
 function updateResult() {
    // console.log('coldScore: ' + coldScore);
     //console.log('fluScore: ' + fluScore);
-	if (coldScore >= 3){
-        result.innerHTML = "You have a cold."
-        console.log("You have a cold");
+	if (yesScore >= 3){
+        result.innerHTML = "You have COVID-19."
+        console.log("You have COVID-19.");
     } 
-    else if (fluScore >= 3) {
-        result.innerHTML = "You have the flu."
-        console.log("You have the flu.");
-  }
-  else if (allergiesScore >= 3){
-    result.innerHTML = "You have allergies."
-    console.log("You have allergies.")
+    else if (noScore >= 3) {
+        result.innerHTML = "You do not have COVID-19."
+        console.log("You do not have COVID-19.");
   }
 }
 
@@ -65,28 +61,11 @@ function showResult() {
 
     calculateScore(q1Answer);
     calculateScore(q2Answer);
-    
-    if(q2Answer == 'flu')
-        calculateScore('allergies');
-    
-    calculateScore(q3Answer);
-    
-    if(q3Answer == 'flu')
-        calculateScore('cold');
-    
+ calculateScore(q3Answer);
     calculateScore(q4Answer);
-    
-    if(q4Answer == 'cold')
-        calculateScore('flu');
-    
     calculateScore(q5Answer);
     
-    if(q5Answer == 'flu')
-        calculateScore('cold');
     
-    calculateScore(q6Answer);
-    calculateScore(q7Answer);
-
 
     updateResult();
 }
@@ -105,5 +84,5 @@ function calculateScore(answer) {
 function reset() {
     result.innerHTML = "You have a..."
     numQuestion = 0
-    coldScore = fluScore = allergiesScore = 0;
+    yesScore = noScore =  0;
 }
