@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:aliceblue;">
+</body>
+<head>
+  <title>Symptoms Quiz</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- import the webpage's javascript file -->
+  <script src="covid.js" defer>
+  </script>
+
+  <style type="text/css">
+    h1 {
+      font-family:Verdana, sans-serif;
+    }
+  </style>
+
+</head>
+
+<body>
+<header>
+    <h1>COVID-19</h1>
+</header>
+
+<main>
+<!--Q1-->
+  <h2>Do you have a fever?</h2>
+  <div class="question">
+    <div class="answer-choice">
+      <input id="q1a1" type="radio" name="q1" value="yes"><label for="q1a1">Yes</label>
+    </div>
+    <div class="answer-choice">
+      <input id="q1a2" type="radio" name="q1" value="no"><label for="q1a2">No</label>
+    </div>
+  </div>
+
+  <!--Q2-->
+  <h2>Do you have a shortness of breath</h2>
+  <div class="question">
+    <div class="answer-choice">
+      <input id="q2a1" type="radio" name="q2" value="yes"><label for="q2a1">Yes</label>
+    </div>
+    <div class="answer-choice">
+      <input id="q2a2" type="radio" name="q2" value="no"><label for="q2a2">No</label>   
+    </div>
+  </div>
+ 
+  <!--Q3-->
+  <h2>Do you have a cough?</h2>
+  <div class="question">
+    <div class="answer-choice">
+      <input id="q3a1" type="radio" name="q3" value="yes"><label for="q3a1">Yes</label>
+    </div>
+    <div class="answer-choice">
+      <input id="q3a2" type="radio" name="q3" value="no"><label for="q3a2">No</label>
+    </div>
+  </div>
+<!--Q4-->
+<h2>Have you been in contact with someone that has tested positive with COVID?</h2>
+<div class="question">
+  <div class="answer-choice">
+    <input id="q4a1" type="radio" name="q4" value="yes"><label for="q4a1">Yes</label>
+  </div>
+  <div class="answer-choice">
+    <input id="q4a2" type="radio" name="q4" value="no"><label for="q4a2">No</label>
+  </div>
+</div>
+<!--Q5-->
+<h2>Have you been in areas with COVID outbreak recently?</h2>
+<div class="question">
+  <div class="answer-choice">
+    <input id="q5a1" type="radio" name="q5" value="yes"><label for="q5a1">Yes</label>
+  </div>
+  <div class="answer-choice">
+    <input id="q5a2" type="radio" name="q5" value="no"><label for="q5a2">No</label>
+  </div>
+</div>
+<button id="showResult" onclick="showResult()">Show Result</button>
+      <h2 id="result">Your result is...</h2>
+
+
+</main>
