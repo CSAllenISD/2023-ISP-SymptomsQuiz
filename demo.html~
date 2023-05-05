@@ -83,7 +83,6 @@
 	  color: white;
 	  cursor: pointer;
       }
-
       
       .aboutus {
 	  color: #ff280d;
@@ -126,37 +125,23 @@
     <br>
     
     <article>
-      <p style="font-size: 27px;"><b>Tejasvi Gutta</b></p>
-      <p style="margin-left: 10%; margin-right: 10%;">Tejasvi Gutta is our teams project manager as well as one of our main software engineers. She created the idea, and makes sure everything gets done when it should. She is very reliable and skilled at what she does.</p>
+      <p style="font-size: 27px;"><b>About Us</b></p>
+      <p style="margin-left: 10%; margin-right: 10%;">We are in the process of making a website called “Symptoms Quiz” for the ISP. It complies most common illnesses and diseases that everyone can get. It will help the community to acknowledge their illnesses and take care of their health.</p>
     </article>
 
     <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
 
     
     <article>
-      <p style="font-size: 27px;"><b>Andrew Nguyen</b></p>
-      <p style="margin-left: 10%; margin-right: 10%;">Andrew Nguyen is our product manager as well as a software engineer.</p>
+      <p style="font-size: 27px;"><b>How does it work?</b></p>
+      <p style="margin-left: 10%; margin-right: 10%;">Our website asks the users for their symptoms in order to find out what illness they have. It will generate new questions based on your previous answers. It will be personalized to the user for their specific needs.</p>
     </article>
 
     <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
 
     <article>
-      <p style="font-size: 27px;"><b>Shreya Kumar</b></p>
-      <p style="margin-left: 10%; margin-right: 10%;">Insert Text</p>
-    </article>
-
-    <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
-
-    <article>
-      <p style="font-size: 27px;"><b>Melanie Lopez</b></p>
-      <p style="margin-left: 10%; margin-right: 10%;">Insert Text</p>
-    </article>
-
-    <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
-
-    <article>
-      <p style="font-size: 27px;"><b>Hoang Nguyen</b></p>
-      <p style="margin-left: 10%; margin-right: 10%;">Insert Text</p>
+      <p style="font-size: 27px;"><b>Contact</b></p>
+      <p style="margin-left: 10%; margin-right: 10%;">Email: quizsymptoms@gmail.com </p>
     </article>
 
     <hr style="width:75%; background-color:#ffab40; height: 4px; text-align: center;">
