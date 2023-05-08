@@ -19,7 +19,7 @@ label{
 
 body {
     background-color: white;
-    text-align: center;
+    text-align: left;
     line-height: 2;
 }
 
@@ -39,7 +39,7 @@ nav {
 
 
 article {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     color: black;
     font-size: 35px;
