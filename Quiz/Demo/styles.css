@@ -1,145 +1,39 @@
-h1{
-    font-size: 70px;
-    color: #ff280d;
-}
-
-div{
-    padding:3px;
-    line-height: 1.5;
-}
-
-
-label{
-    margin-left: 5px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: white;
-    text-align: left;
-    line-height: 2;
+    background-color: aliceblue;
+    /* text-align: center; */
 }
-
 header {
-    float: left;
-    width: 50%;
-    background-color: #c2dbf4ff;
-    padding: 30px;
+    /* text-align: center; */
 }
-
-nav {
-    float: right;
-    width: 50%;
-    background-color: #c2dbf4ff;
-    padding: 30px;
+.answer-choice {
+    /* text-align: center; */
 }
-
-
-article {
-    text-align: left;
-    padding: 10px;
-    color: black;
-    font-size: 35px;
-    font-family: "Times New Roman", Times, serif;
+h2 {
+    /* text-align: center; */
+    padding-left: 10px;
 }
-
-back {
-    text-align: left;
-    padding: 5px;
-    color: white;
-    font-size: 25px;
-    font-family: "Times New Roman", Times, serif;   
-}
-
 .button {
     border: none;
-    background-color: #c2dbf4ff;
-    height: 90px;
-    padding: 14px 28px;
-    font-size: 35px;
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    padding: 3px;
-}
-
-.btn {
-    border: none;
-    padding: 3px;
-    background-color: #c2dbf4ff;
-    height: 90px;
-    padding: 14px 28px;
-    font-size: 35px;
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-}
-
-.bttn {
-    background-color: #ff280d;
-    border: none;
-    font-size: 25px;
-    font-family: "Times New Roman", Times, serif;
-    color: white;
-    padding: 20px 30px;
-    text-align: left;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 80px;
+    color: black;
+    padding: 20px 36px;
+    font-size: 16px;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
-
-/*Create buttons to for other pages */
-.homepage {
-    color: #ff280d;
+.cfapage {
+    color: black;
 }
-
-.homepage:hover {
+.cfapage:hover {
     background-color: purple;
-    transition-duration: 0.4s;
     color: white;
-    cursor: pointer;
 }
-
-.git {
-    color: #ff280d;
+div{
+    padding:10px;
 }
-
-.git:hover {
-    background-color: purple;
-    transition-duration: 0.4s;
-    color: white;
-    cursor: pointer;
+h1{
+    font-size: 50px;
+    color: midnightblue;
 }
-
-.team {
-    color: #ff280d;
-}
-
-.team:hover {
-    background-color: purple;
-    transition-duration: 0.4s;
-    color: white;
-    cursor: pointer;
-}
-
-.aboutus {
-    color: #ff280d;
-}
-
-.aboutus:hover {
-    background-color: purple;
-    transition-duration: 0.4s;
-    color: white;
-    cursor: pointer;
-}
-
-.bttn:hover {
-    background-color: purple;
-    transition-duration: 0.4s;
-    color: white;
-    cursor: pointer;
+label{
+    margin-left: 5px;
 }
