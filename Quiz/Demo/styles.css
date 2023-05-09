@@ -1,0 +1,39 @@
+body {
+    background-color: aliceblue;
+    /* text-align: center; */
+}
+header {
+    /* text-align: center; */
+}
+.answer-choice {
+    /* text-align: center; */
+}
+h2 {
+    /* text-align: center; */
+    padding-left: 10px;
+}
+.button {
+    border: none;
+    color: black;
+    padding: 20px 36px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.cfapage {
+    color: black;
+}
+.cfapage:hover {
+    background-color: purple;
+    color: white;
+}
+div{
+    padding:10px;
+}
+h1{
+    font-size: 50px;
+    color: midnightblue;
+}
+label{
+    margin-left: 5px;
+}

@@ -1,119 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<body style="background-color:aliceblue;">
-</body>
-<head>
-  <title>Symptoms Quiz</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>CFA Quiz</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <!-- import the webpage's javascript file -->
-  <script src="script.js" defer>
-  </script>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	    crossorigin="anonymous"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="cfa.js" defer>
+    </script>
 
-  <style type="text/css">
-    h1 {
-      font-family:Verdana, sans-serif;
-    }
-  </style>
+  </head>
 
-</head>
+  <body>
 
-<body>
-<header>
-    <h1>Cold, Flu, Allergies</h1>
-</header>
+    <header>
+      <a href="../index.html"><button class="button homepage">Home Page</button></a>
+    </header>
 
-<main>
-<!--Q1-->
-  <h2>Do you have a fever?</h2>
-  <div class="question">
-    <div class="answer-choice">
-      <input id="q1a1" type="radio" name="q1" value="flu"><label for="q1a1">Yes</label>
-    </div>
-    <div class="answer-choice">
-      <input id="q1a2" type="radio" name="q1" value="allergies"><label for="q1a2">No</label>
-    </div>
-    <div class="answer-choice">
-      <input id="q1a3" type="radio" name="q1" value="cold"><label for="q1a3">Maybe</label>
-    </div>
-  </div>
+    <nav>
+      <a href="https://github.com/CSAllenISD/2023-ISP-SymptomsQuiz"><button class="btn git">GitHub</button></a>
+      <a href="../ourteam.html"><button class="btn team">Our Team</button></a>
+      <a href="../aboutus.html"><button class="btn aboutus">About Us</button></a>
+    </nav>
 
-  <!--Q2-->
-  <h2>Do you have a sore throat?</h2>
-  <div class="question">
-    <div class="answer-choice">
-      <input id="q2a1" type="radio" name="q2" value="cold"><label for="q2a1">Yes</label>
-    </div>
-    <div class="answer-choice">
-      <input id="q2a2" type="radio" name="q2" value="flu"><label for="q2a2">Maybe</label>   
-    </div>
-  </div>
- 
-  <!--Q3-->
-  <h2>Do you have a cough?</h2>
-  <div class="question">
-    <div class="answer-choice">
-      <input id="q3a1" type="radio" name="q3" value="flu"><label for="q3a1">Yes</label>
-    </div>
-    <div class="answer-choice">
-      <input id="q3a2" type="radio" name="q3" value="allergies"><label for="q3a2">No</label>
-    </div>
-  </div>
-<!--Q4-->
-<h2>Do you have an itchy throat or nose?</h2>
-<div class="question">
-  <div class="answer-choice">
-    <input id="q4a1" type="radio" name="q4" value="allergies"><label for="q4a1">Yes</label>
-  </div>
-  <div class="answer-choice">
-    <input id="q4a2" type="radio" name="q4" value="cold"><label for="q4a2">No</label>
-  </div>
-</div>
-<!--Q5-->
-<h2>Do you have itchy/watery eyes?</h2>
-<div class="question">
-  <div class="answer-choice">
-    <input id="q5a1" type="radio" name="q5" value="allergies"><label for="q5a1">Yes</label>
-  </div>
-  <div class="answer-choice">
-    <input id="q5a2" type="radio" name="q5" value="flu"><label for="q5a2">No</label>
-  </div>
-</div>
-<!--Q6-->
-<h2>Do you get muscle aches frequently?</h2>
-<div class="question">
-  <div class="answer-choice">
-    <input id="q6a1" type="radio" name="q6" value="flu"><label for="q6a1">Yes</label>
-  </div>
-  <div class="answer-choice">
-    <input id="q6a2" type="radio" name="q6" value="flu"><label for="q6a2">No</label>
-  </div>
-  <div class="answer-choice">
-    <input id="q6a3" type="radio" name="q6" value="cold"><label for="q6a3">Maybe</label>
-  </div>
-</div>
-<!--Q7-->
-<h2>How long have these symptoms lasted?</h2>
-<div class="question">
-  <div class="answer-choice">
-    <input id="q7a1" type="radio" name="q7" value="cold"><label for="q7a1">Up to 2 weeks</label>
-  </div>
-  <div class="answer-choice">
-    <input id="q7a2" type="radio" name="q7" value="flu"><label for="q7a2">3-7 Days</label>
-  </div>
-  <div class="answer-choice">
-    <input id="q7a3" type="radio" name="q7" value="allergies"><label for="q7a3">Weeks or months</label>
-  </div>
-</div>
+    <article>
+      <h1>Cold, Flu, Allergies</h1>
 
-<button id="showResult" onclick="showResult()">Show Result</button>
-      <h2 id="result">Your result is...</h2>
+      <!--Q1-->
+      <h3>Do you have a fever?</h3>
+      <div class="question">
+	<div class="answer-choice">
+	  <input id="q1a1" type="radio" name="q1" value="flu"><label for="q1a1">Yes</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q1a2" type="radio" name="q1" value="allergies"><label for="q1a2">No</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q1a3" type="radio" name="q1" value="cold"><label for="q1a3">Maybe</label>
+	</div>
+      </div>
 
+      <!--Q2-->
+      <h3>Do you have a sore throat?</h3>
+      <div class="question">
+	<div class="answer-choice">
+	  <input id="q2a1" type="radio" name="q2" value="cold"><label for="q2a1">Yes</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q2a2" type="radio" name="q2" value="flu"><label for="q2a2">Maybe</label>
+	</div>
+      </div>
+      
+      <!--Q3-->
+      <h3>Do you have a cough?</h3>
+      <div class="question">
+	<div class="answer-choice">
+	  <input id="q3a1" type="radio" name="q3" value="flu"><label for="q3a1">Yes</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q3a2" type="radio" name="q3" value="allergies"><label for="q3a2">No</label>
+	</div>
+      </div>
+      <!--Q4-->
+      <h3>Do you have an itchy throat or nose?</h3>
+      <div class="question">
+	<div class="answer-choice">
+	  <input id="q4a1" type="radio" name="q4" value="allergies"><label for="q4a1">Yes</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q4a2" type="radio" name="q4" value="cold"><label for="q4a2">No</label>
+	</div>
+      </div>
+      <!--Q5-->
+      <h3>Do you have itchy/watery eyes?</h3>
+      <div class="question">
+	<div class="answer-choice">
+	  <input id="q5a1" type="radio" name="q5" value="allergies"><label for="q5a1">Yes</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q5a2" type="radio" name="q5" value="flu"><label for="q5a2">No</label>
+	</div>
+      </div>
+      <!--Q6-->
+      <h3>Do you get muscle aches frequently?</h3>
+      <div class="question">
+	<div class="answer-choice">
+	  <input id="q6a1" type="radio" name="q6" value="flu"><label for="q6a1">Yes</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q6a2" type="radio" name="q6" value="flu"><label for="q6a2">No</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q6a3" type="radio" name="q6" value="cold"><label for="q6a3">Maybe</label>
+	</div>
+      </div>
+      <!--Q7-->
+      <h3>How long have these symptoms lasted?</h3>
+      <div class="question">
+	<div class="answer-choice">
+	  <input id="q7a1" type="radio" name="q7" value="cold"><label for="q7a1">Up to 2 weeks</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q7a2" type="radio" name="q7" value="flu"><label for="q7a2">3-7 Days</label>
+	</div>
+	<div class="answer-choice">
+	  <input id="q7a3" type="radio" name="q7" value="allergies"><label for="q7a3">Weeks or months</label>
+	</div>
+      </div>
 
-</main>
+      <button id="showResult" onclick="showResult()">Show Result</button>
+      <h3 id="result">Your result is...</h3>
+
+      <back><p><a href="index.html"><button class="bttn">Go Back</button></a></p></back>
+    </article>
+
+  </body>
+  

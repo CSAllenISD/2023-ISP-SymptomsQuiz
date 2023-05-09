@@ -42,20 +42,20 @@ var result = document.getElementById("result");
 //showResultButton.addEventListener("click", showResult);
 
 function updateResult() {
-   // console.log('coldScore: ' + coldScore);
+    // console.log('coldScore: ' + coldScore);
     //console.log('fluScore: ' + fluScore);
-	if (coldScore >= 3){
-        result.innerHTML = "You have a cold."
-        console.log("You have a cold");
-    } 
+    if (coldScore >= 3){
+	result.innerHTML = "You have a cold."
+	console.log("You have a cold");
+    }
     else if (fluScore >= 3) {
-        result.innerHTML = "You have the flu."
-        console.log("You have the flu.");
-  }
-  else if (allergiesScore >= 3){
-    result.innerHTML = "You have allergies."
-    console.log("You have allergies.")
-  }
+	result.innerHTML = "You have the flu."
+	console.log("You have the flu.");
+    }
+    else if (allergiesScore >= 3){
+	result.innerHTML = "You have allergies."
+	console.log("You have allergies.")
+    }
 }
 
 function showResult() {
@@ -80,25 +80,25 @@ function showResult() {
 
     calculateScore(q1Answer);
     calculateScore(q2Answer);
-    
+
     if(q2Answer == 'flu')
-        calculateScore('allergies');
-    
+	calculateScore('allergies');
+
     calculateScore(q3Answer);
-    
+
     if(q3Answer == 'flu')
-        calculateScore('cold');
-    
+	calculateScore('cold');
+
     calculateScore(q4Answer);
-    
+
     if(q4Answer == 'cold')
-        calculateScore('flu');
-    
+	calculateScore('flu');
+
     calculateScore(q5Answer);
-    
+
     if(q5Answer == 'flu')
-        calculateScore('cold');
-    
+	calculateScore('cold');
+
     calculateScore(q6Answer);
     calculateScore(q7Answer);
 
@@ -108,15 +108,15 @@ function showResult() {
 
 function calculateScore(answer) {
     switch(answer){
-        case "flu":
-            fluScore++;
-            break;
-        case "cold":
-            coldScore++;
-            break;
-        case "allergies":
-            allergiesScore++;
-            break;
+    case "flu":
+	fluScore++;
+	break;
+    case "cold":
+	coldScore++;
+	break;
+    case "allergies":
+	allergiesScore++;
+	break;
     }
 }
 
@@ -125,4 +125,3 @@ function reset() {
     numQuestion = 0
     coldScore = fluScore = allergiesScore = 0;
 }
-
